@@ -4,13 +4,15 @@ import {
   User,
   Package,
   MapPin,
-  Key,
+  Key, ub78tgygghghghg
+  nm bvgvvvgvggvgvgvgvgjjjnj
   LogOut,
   ExternalLink,
   Clock,
   CheckCircle,
   Plus,
   Edit2,
+  n nbhb
   Trash2,
   Check,
   Building,
@@ -152,8 +154,8 @@ export const AccountPage: React.FC = () => {
             a._id === editingAddressId
               ? updated
               : addressForm.isDefault
-              ? { ...a, isDefault: false }
-              : a
+                ? { ...a, isDefault: false }
+                : a
           )
         );
         success('Delivery address updated');
@@ -240,44 +242,40 @@ export const AccountPage: React.FC = () => {
           <nav className="space-y-1">
             <button
               onClick={() => setActiveTab('orders')}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-colors cursor-pointer ${
-                activeTab === 'orders'
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-colors cursor-pointer ${activeTab === 'orders'
                   ? 'bg-pink-50 text-[#FF4B6E]'
                   : 'text-slate-600 hover:bg-slate-50'
-              }`}
+                }`}
             >
               <Package className="w-4 h-4" />
               <span>My Orders ({orders.length})</span>
             </button>
             <button
               onClick={() => setActiveTab('profile')}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-colors cursor-pointer ${
-                activeTab === 'profile'
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-colors cursor-pointer ${activeTab === 'profile'
                   ? 'bg-pink-50 text-[#FF4B6E]'
                   : 'text-slate-600 hover:bg-slate-50'
-              }`}
+                }`}
             >
               <User className="w-4 h-4" />
               <span>Profile Details</span>
             </button>
             <button
               onClick={() => setActiveTab('addresses')}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-colors cursor-pointer ${
-                activeTab === 'addresses'
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-colors cursor-pointer ${activeTab === 'addresses'
                   ? 'bg-pink-50 text-[#FF4B6E]'
                   : 'text-slate-600 hover:bg-slate-50'
-              }`}
+                }`}
             >
               <MapPin className="w-4 h-4" />
               <span>Delivery Addresses</span>
             </button>
             <button
               onClick={() => setActiveTab('security')}
-              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-colors cursor-pointer ${
-                activeTab === 'security'
+              className={`w-full flex items-center gap-3 px-4 py-3 rounded-2xl text-xs sm:text-sm font-bold transition-colors cursor-pointer ${activeTab === 'security'
                   ? 'bg-pink-50 text-[#FF4B6E]'
                   : 'text-slate-600 hover:bg-slate-50'
-              }`}
+                }`}
             >
               <Key className="w-4 h-4" />
               <span>Security & Password</span>
@@ -327,7 +325,7 @@ export const AccountPage: React.FC = () => {
                     >
                       <div className="flex flex-wrap items-center justify-between gap-3 text-xs">
                         <div>
-                          <span className="font-bold text-slate-800">Order #{order.orderNumber || order._id.slice(-8).toUpperCase()}</span>
+                          <span className="font-bold text-slate-800">Order #{order.orderId || order._id.slice(-8).toUpperCase()}</span>
                           <span className="text-slate-400 ml-2">
                             {new Date(order.createdAt).toLocaleDateString('en-IN', {
                               day: 'numeric',
@@ -473,11 +471,10 @@ export const AccountPage: React.FC = () => {
                   {addresses.map((addr) => (
                     <div
                       key={addr._id}
-                      className={`p-5 rounded-3xl border-2 transition-all flex flex-col justify-between space-y-4 ${
-                        addr.isDefault
+                      className={`p-5 rounded-3xl border-2 transition-all flex flex-col justify-between space-y-4 ${addr.isDefault
                           ? 'border-[#FF4B6E] bg-pink-50/20 shadow-xs'
                           : 'border-slate-100 hover:border-slate-200 bg-white'
-                      }`}
+                        }`}
                     >
                       <div className="space-y-2 text-xs">
                         <div className="flex justify-between items-start">

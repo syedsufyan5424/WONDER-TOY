@@ -176,3 +176,60 @@ To generate optimized production bundles:
 npm run build
 ```
 This builds both the backend (`backend/dist`) and frontend (`frontend/dist`) using TypeScript and Vite.
+
+
+
+-----------------------------------------------------------------------
+
+1. frontend/index.css
+2. backend/src/models/Order.ts
+3. backend/src/models/User.ts
+4. backend/src/models/Product.ts
+5. backend/src/models/Cart.ts
+6. backend/src/models/Coupon.ts
+7. backend/src/controllers/orderController.ts
+8. backend/src/routes/orderRoutes.ts
+9. backend/src/routes/authRoutes.ts
+10. backend/src/routes/productRoutes.ts
+11. backend/src/routes/couponRoutes.ts
+12. backend/src/routes/cartRoutes.ts
+13. backend/src/middleware/authMiddleware.ts
+14. backend/src/utils/generateToken.ts
+15. backend/src/utils/sendEmail.ts
+16. backend/src/server.ts
+17. frontend/src/pages/HomePage.tsx
+18. frontend/src/pages/ProductDetailsPage.tsx
+19. frontend/src/pages/CartPage.tsx
+20. frontend/src/pages/CheckoutPage.tsx
+21. frontend/src/pages/OrderConfirmationPage.tsx
+22. frontend/src/pages/ShopPage.tsx
+23. frontend/src/pages/CategoryPage.tsx
+24. frontend/src/pages/WishlistPage.tsx
+25. frontend/src/pages/AccountPage.tsx
+26. frontend/src/pages/OrderHistoryPage.tsx
+27. frontend/src/pages/OrderDetailPage.tsx
+28. frontend/src/pages/admin/AdminDashboardPage.tsx
+29. frontend/src/pages/admin/AdminProductsPage.tsx
+30. frontend/src/pages/admin/AdminOrdersPage.tsx
+31. frontend/src/pages/admin/AdminCustomersPage.tsx
+32. frontend/src/pages/admin/AdminCouponsPage.tsx
+33. frontend/src/pages/admin/AdminSettingsPage.tsx
+34. frontend/src/pages/admin/AdminInventoryPage.tsx
+35. frontend/src/pages/admin/AdminCategoriesPage.tsx
+36. frontend/src/services/api.ts
+37. frontend/src/context/AuthContext.tsx
+38. frontend/src/context/CartContext.tsx
+39. frontend/src/context/WishlistContext.tsx
+40. frontend/src/components/wondertoys/ui/ProductCard.tsx
+41. frontend/src/components/wondertoys/ui/AdminHeader.tsx
+42. frontend/src/components/wondertoys/ui/AdminSidebar.tsx
+43. frontend/src/components/wondertoys/ui/ProductGrid.tsx
+44. frontend/src/components/wondertoys/ui/FilterSidebar.tsx
+45. frontend/src/components/wondertoys/ui/CheckoutStepper.tsx
+46. frontend/src/components/wondertoys/ui/AddressModal.tsx
+47. frontend/src/components/wondertoys/ui/AdminAnalyticsChart.tsx
+48. frontend/src/App.tsx
+49. frontend/vite.config.ts
+50. package.json
+51. backend/package.json
+52. backend/src/config/db.ts
