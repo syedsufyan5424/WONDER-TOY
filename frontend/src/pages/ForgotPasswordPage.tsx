@@ -42,10 +42,8 @@ export const ForgotPasswordPage: React.FC = () => {
         <section className="w-full lg:w-1/2 flex">
           <WonderToysPromoPanel
             headlineLine1="WELCOME BACK TO"
-            headlineLine2Prefix="THE"
-            headlineLine2Main="WORLD OF PLAY!"
-            supportingTextLine1="Log in to track your orders, view saved favorites,"
-            supportingTextLine2="and explore the latest magical toy arrivals."
+            headlineLine2="THE WORLD OF PLAY!"
+            supportingText="Log in to track your orders, view saved favorites, and explore the latest magical toy arrivals."
           />
         </section>
 
